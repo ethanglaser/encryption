@@ -16,55 +16,14 @@ abccd
 
 def encrypt(filepath, message):
     # add code to encrypt a message and write the encryption to a text file
-    chars = list(set(message))
-    key = {}
-    for index in range(len(chars)):
-        key[chars[index]] = chars[(index + 1) % len(chars)]
-    keytext = ""
-    for k in key.keys():
-        keytext += k + key[k]
-    newmsg = ""
-    for char in message:
-        newmsg += key[char]
+    pass
 
-    with open(filepath, "w") as f:
-        f.write(keytext)
-        f.write("\n\n\n")
-        f.write(newmsg)
-
-
-
-def decrypt(infile, outfile):
+def decrypt(filepath):
     # add code to open a text file and decrypt the message
-    with open(infile, "r") as f1:
-        intext = f1.read()
-    components = intext.split("\n\n\n")
-    keytext = components[0]
-    msgtext = components[1]
-
-    decipher = {}
-    for index in range(0, len(keytext), 2):
-        decipher[keytext[index + 1]] = keytext[index]
-    
-    original = ""
-    for char in msgtext:
-        original += decipher[char]
-
-    with open(outfile, "w") as f2:
-        f2.write(original)
-
+    pass
 
 if __name__ == "__main__":
-    with open("message.txt", "r") as f:
-        text = f.read()
-    filename = "encrypted.txt"
-    encrypt(filename, text)
-    outfile = "decrypted.txt"
-    decrypt(filename, outfile)
-    
-    text1 = open("message.txt").readlines()
-    text2 = open("decrypted.txt").readlines()
-    print(text1 == text2)
-
-
+    message = ""
+    filename = ""
+    encrypt(message, filename)
 
