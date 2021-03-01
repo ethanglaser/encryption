@@ -27,3 +27,9 @@ if __name__ == "__main__":
     filename = ""
     encrypt(message, filename)
 
+
+
+
+    message = "hello"
+    print(list(set(message)))
+
