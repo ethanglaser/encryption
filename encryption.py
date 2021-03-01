@@ -12,7 +12,7 @@ abccd
 # This project is meant to be flexible, so come up with a way to encrypt a message, as well as decrypting the encrypted message
 # Start off with a basic encryption and work your way up to something complicated!
 
-# You may set up functions like this, or you can do it your own way
+# You may set up functionz like this, or you can do it your own way
 
 def encrypt(filepath, message):
     # add code to encrypt a message and write the encryption to a text file
