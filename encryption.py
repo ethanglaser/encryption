@@ -19,7 +19,7 @@ def encrypt(filepath, message):
     pass
 
 def decrypt(filepath):
-    # add code to open a text file and decrypt the message
+    # add code to open a text fi le and decrypt the message
     pass
 
 if __name__ == "__main__":
