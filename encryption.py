@@ -15,7 +15,7 @@ abccd
 # You may set up functions like this, or you can do it your own way
 
 def encrypt(filepath, message):
-    # add code to encrypt a message and write the encryption to a text file
+    # add code to encrypt a mes sage and write the encryption to a text file
     pass
 
 def decrypt(filepath):
